@@ -1,0 +1,17 @@
+version: '3.7'
+services:
+  reins-gui:
+    build:
+      context: .
+    image: reins-gui
+    container_name: reins-gui
+    command: /bin/bash
+    privileged: true
+    network_mode: "host"
+    environment:
+      - DISPLAY=$DISPLAY
+    tty: true
+    working_dir: "/reins-gui"
+    volumes:
+      - .:/reins-gui:cached
+      - $HOME/.Xauthority:/root/.Xauthority:rw
