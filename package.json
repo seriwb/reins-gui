@@ -53,6 +53,7 @@
     "build": "yarn build-renderer && yarn build-electron",
     "pack-app": "yarn build && electron-builder --dir",
     "dist": "yarn build && electron-builder",
+    "dist:all": "yarn build && electron-builder -mwl",
     "type-check": "tsc",
     "build:win": "node build-win",
     "build:mac": "node build-mac",

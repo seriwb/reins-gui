@@ -7,13 +7,13 @@ module.exports = {
     '!**/node_modules/**',
   ],
   roots: [
-    '<rootDir>/src'
+    '<rootDir>/renderer/src'
   ],
   // TODO:testディレクトリにテストを置く場合、rootDirから変える
   // rootDir: 'test',
   // testMatch: ['**/*.test.ts', '**/*.test.tsx'],
   setupFilesAfterEnv: [
-    '<rootDir>/test/setupTests.ts'
+    '<rootDir>/renderer/test/setupTests.ts'
   ],
   testPathIgnorePatterns: [
     '/node_modules/',
@@ -45,7 +45,7 @@ module.exports = {
   },
   globals: {
     'ts-jest': {
-      'tsConfig': '<rootDir>/test/tsconfig.jest.json'
+      'tsConfig': '<rootDir>/renderer/test/tsconfig.jest.json'
     }
   }
 };
