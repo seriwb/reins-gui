@@ -1,6 +1,25 @@
 # reins GUI
 
 
+Available commands:
+
+```bash
+"yarn build-renderer": build and transpile Next.js layer
+"yarn build-electron": transpile electron layer
+"yarn build": build both layers
+"yarn start": start dev version
+"yarn dist": create production elctron build
+"yarn type-check": check TypeScript in project
+```
+
+
+| Part       | Source code (Typescript) | Builds (JavaScript) |
+| ---------- | ------------------------ | ------------------- |
+| Next.js    | `/renderer`              | `/renderer`         |
+| Electron   | `/electron-src`          | `/main`             |
+| Production |                          | `/dist`             |
+
+
 # for developer
 
 ## [WIP]Docker開発の場合

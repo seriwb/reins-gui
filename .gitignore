@@ -1,4 +1,7 @@
 /dist
+/main
+/renderer/.next
+/renderer/out
 
 # dependencies
 /node_modules
