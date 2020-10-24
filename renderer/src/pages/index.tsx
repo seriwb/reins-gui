@@ -1,9 +1,11 @@
-import Link from 'next/link'
-import Layout from '../components/Layout'
+import Link from 'next/link';
+import { Layout } from '../components/layouts';
 
-const IndexPage = () => {
+import { NextPage } from "next";
+
+const IndexPage: NextPage = () => {
   return (
-    <Layout title="Home | Next.js + TypeScript + Electron Example">
+    <Layout>
       <h1>Hello Next.js 👋</h1>
       <p>
         <Link href="/about">
